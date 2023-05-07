@@ -13,4 +13,14 @@ public class DummyController {
     public ResponseEntity<String> helloWorld() {
         return ResponseEntity.ok("Hello from my api!");
     }
+
+    @GetMapping("/forAdmin")
+    public ResponseEntity<String> helloWorldForAdmin() {
+        return ResponseEntity.ok("Witaj adminie!");
+    }
+
+    @GetMapping("/forUser")
+    public ResponseEntity<String> helloWorldForUser() {
+        return ResponseEntity.ok("Witaj użytkowniku!");
+    }
 }
